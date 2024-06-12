@@ -1,4 +1,3 @@
-
 //    +++++++++++++++++++++++++++++++++ declearing multiple objects inside Object
 const user = {
     email: 'Harry@google.com',
@@ -14,7 +13,7 @@ const user = {
 // console.log(user.country.nepal.city.cityArea);   
 
 
-//   +++++++++++++++++++++++++++++++++++ Adding multiple objects in single object.
+//   +++++++++++++++++++++++ Adding multiple objects. ++++++++++++++++++++++++
 const obj1 = {1:'alish', 2:'harry', 3:'hitesh'}
 const obj2 = {4: 'sam', 5:'rohan', 6:'manesh'}
 const obj3 = {7:'mahesh', 8:'kapil', 9:'dipak'}

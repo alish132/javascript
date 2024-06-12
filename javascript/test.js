@@ -1,10 +1,7 @@
-const obj1 = {1:'alish', 2:'harry', 3:'hitesh'}
-const obj2 = {4: 'sam', 5:'rohan', 6:'manesh'}
-const obj3 = {7:'mahesh', 8:'kapil', 9:'dipak'}
+let arr = [{
+    name: 'alish',
+    email: 'alish@google.com'
+},2,3,4,5,6,7]
 
-// let result = {obj1, obj2}
-// let result = {...obj1, ...obj2}
-let result = Object.assign({}, obj1, obj2,obj3)
 
-console.log(result);
-console.log(result==obj1);
+console.log(arr[0].email);
