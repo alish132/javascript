@@ -1,12 +1,10 @@
-let customer = {
-    name: 'Elon musk',
-    purchase: ['potato','apple','banana'],
-    address: 'Las vages',
-    email: 'elon@tesla.com',
-    'Phone No': 9867252526
-}
+const obj1 = {1:'alish', 2:'harry', 3:'hitesh'}
+const obj2 = {4: 'sam', 5:'rohan', 6:'manesh'}
+const obj3 = {7:'mahesh', 8:'kapil', 9:'dipak'}
 
-customer.greet = function(){
-    console.log(`Welcome back ${this.name} thank you for purchasing ${this.purchase}`);
-}
-console.log(customer["Phone No"]);
+// let result = {obj1, obj2}
+// let result = {...obj1, ...obj2}
+let result = Object.assign({}, obj1, obj2,obj3)
+
+console.log(result);
+console.log(result==obj1);
