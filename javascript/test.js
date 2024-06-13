@@ -1,8 +1,4 @@
-one()
-function one() {
-    console.log('I am first function');
-}
+const fun = (a,b) => 
+    a+b
 
-const two = function(){
-    console.log('I am second function');
-}
+console.log(fun(10,10))
