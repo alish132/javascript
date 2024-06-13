@@ -1,4 +1,4 @@
-//    +++++++++++++++++++++++++++++++++ declearing multiple objects inside Object
+//    +++++++++++++++++++++ declearing multiple objects inside Object ++++++++++++++++
 const user = {
     email: 'Harry@google.com',
     country: {
@@ -13,7 +13,7 @@ const user = {
 // console.log(user.country.nepal.city.cityArea);   
 
 
-//   +++++++++++++++++++++++ Adding multiple objects. ++++++++++++++++++++++++
+//   +++++++++++++++++++++++ Adding multiple objects. ++++++++++++++++++++++++++++++++
 const obj1 = {1:'alish', 2:'harry', 3:'hitesh'}
 const obj2 = {4: 'sam', 5:'rohan', 6:'manesh'}
 const obj3 = {7:'mahesh', 8:'kapil', 9:'dipak'}
@@ -25,7 +25,7 @@ const result = {...obj1,...obj2,...obj3}   // This is the most efficient way to 
 // console.log(result);
 
 
-// ++++++++++++++++++ Objects inside of array 
+// ++++++++++++++++++ Objects inside of array +++++++++++++++++++++++++++++++++++++
 const myarr = [
     {
         id: 9003,
@@ -50,4 +50,16 @@ myarr[0].email = 'alish@microsoft.com'
 
 // console.log(obj1.hasOwnProperty('email'));  // Shows given property is in object or not.
 
-console.log(obj1);
+// console.log(obj1);
+
+
+// +++++++++++++++++++++++++ Object de-structure +++++++++++++++++++++++++++++++
+const course = {
+    Instructor: 'Hitesh',
+    courseName: 'js in nepali',
+    price: 'Free',
+    validity: '1 year'
+}
+
+const {price,Instructor:sir} = course   // With this object de-structure we did not nedd to write course.price everytime.
+console.log(`The price of course is ${price}and the teacher is ${sir}`);
