@@ -6,7 +6,7 @@ for (const i of arr) {
 
 }
 
-const map = new Map()
+const map = new Map()  // This loop is useful for map
 map.set('name', 'harry')
 map.set('age', '30')
 map.set('email', 'harry@microsoft.com')
@@ -26,6 +26,7 @@ let obj = {
     game2: 'Free Fire',
     gam3: 'Call of duty'
 }
+
 for (const key in obj) {
     // console.log(obj[key]);
 }
@@ -36,8 +37,8 @@ for (const key in language) {
 }
 
 
-// ++++++++++++++++++++++   Foreach loop  +++++++++++++++++++++++++
-// This loop is for Array.
+// ++++++++++++++++++++++   For each loop  +++++++++++++++++++++++++
+// This loop is for Array only
 
 let bigArr = [10, 20, 30, 40, 50, 60, 70]
 
@@ -50,9 +51,9 @@ function print(val) {
     console.log(val);
 }
 
-// bigArr.forEach(print)    // We can give also external function as an input.
+// bigArr.forEach(print)    // We can also give external function as an input.
 
-bigArr.forEach((item, index, arr) => { // This loop also give access to the index and whole array
+bigArr.forEach((item, index, arr) => { // This loop also give access to the index and whole array also
     // console.log(item, index, arr);
 })
 
@@ -76,5 +77,5 @@ let beautifulPlace = [
 ]
 
 beautifulPlace.forEach( (item)=>{
-    console.log(item.place);
+    // console.log(item.place);
 } )
