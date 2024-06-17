@@ -1,0 +1,40 @@
+// ================================>  Selectby ID  <===========================================
+
+document.getElementById('title').innerHTML = '<h1>Iam just testing</h1>'
+document.getElementById('title').id
+document.getElementById('title').className
+document.getElementById('title').setAttribute('class', 'heading parent')  // (Here it overwrite existing className so always give old className(heading) and new className(parent) in order to make changes in className.)
+
+const test = document.getElementById('title')
+test.style.backgroundColor = 'aqua'
+test.style.padding = '10px 20px'
+test.style.borderRadius = '20px'
+test.innerText        =====> Shows only which is visible 
+test.textContent      =====> shows hidden(display: none) contents also
+test.innerHTML       ======> shows HTML tags also
+
+
+
+===========================>  Selectby QuerySelecter    <===============================
+// querySelector  ==> return only first element
+// querySelectorAll  ==> return all elements 
+
+document.querySelector('h2[title="third"]')  ===> select first h2 with title=third
+document.querySelector('#title')    ===>  select id title
+document.querySelector('.heading')    ===> select class heading
+
+//// querySelectorAll return Notelist which is not array itself but similar to array and we  use forEach loop to make changes in all items
+
+let test = document.querySelectorAll('li')
+test    ====> It return nodelist which is not array but similar to array
+test.forEach((i) => (i.style.color = 'red'))   ===> (applied to all items inside nodelist)
+
+
+
+//  ==========================> select by className   <=====================================
+////  ClassName return HTML collection  and we need to convert that HTML collection into array in order to make changes in all items 
+
+let selectClass = document.getElementsByClassName('list')
+selectClass   ===> It return HTML collection and we need to convert it into array
+let newClass = Array.from(selectClass)     ====> Converting into array
+newClass.forEach((i) => (i.style.color = 'green'))   
