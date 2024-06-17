@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <ul>
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    //  =========================>  Function for adding new li  <==================================
+    function addLanguage(language){
+        let newElement = document.createElement('li')   // creating new element that is li
+        let elementText = document.createTextNode(language)    // creating textnode or content for li
+        newElement.appendChild(elementText)      //  Appending or adding that textnode in newely created li
+
+        // let parent = document.querySelector('ul')
+        // parent.appendChild(newElement)
+        document.querySelector('ul').appendChild(newElement)    // At last Appending newly created li in ul.
+    }
+    addLanguage('Python')
+    addLanguage('Java')
+    addLanguage('Swift')
+    addLanguage('Golang')
+
+
+    // =============================> Edit or Replace Element  <==================================== 
+    const secondElement = document.querySelector('li:nth-child(2)')  // Selecting element which we want to replace.
+    let newElement = document.createElement('li')     // Creating new element which is li
+    newElement.appendChild(document.createTextNode('PHP'))    // Creating textnode and appending that in newly created li
+    secondElement.replaceWith(newElement)       // Replacing existing li with newly created li
+
+
+    // ==============================> Remove Element   <======================================
+    const lastChild = document.querySelector('li:last-child')  // Selecting element which we want to remove.
+    lastChild.remove()      // Removing that element
+
+</script>
+</html>
