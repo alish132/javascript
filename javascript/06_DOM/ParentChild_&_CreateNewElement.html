@@ -41,19 +41,21 @@
     const childDiv = document.querySelector('.days')
     // console.log(childDiv.parentElement);
     // console.log(childDiv.nextElementSibling);
-    // console.log(`Nodes: ${parent.childNodes}`);
+    // console.log(`Nodes: ${parent.childNodes}`)
 
-    // Add new element
-    const newh1 = document.createElement('h1')
-    newh1.className = 'heading'
-    newh1.id = 'myId'
-    newh1.setAttribute('title','Just Testing')
-    newh1.style.color = 'green'
-    // newh1.innerText = 'Chai aur Code'
-    const newText = document.createTextNode("Chai Aur Code")
-    newh1.appendChild(newText)
 
-    document.body.appendChild(newh1)
+// =============> Create and Add new Element <========================
+
+    const newh1 = document.createElement('h1')  // Creating New h1 Element
+    newh1.className = 'heading'    // Setting className New in h1 Element
+    newh1.id = 'myId'         // Setting Id in New h1 element
+    newh1.setAttribute('title','Just Testing')   // Setting Attribute
+    newh1.style.color = 'green'   // Setting Color
+    // newh1.innerText = 'Chai aur Code'   // This is also a method to add Content in new element.
+    const newText = document.createTextNode("Chai Aur Code")  // Creating newText node 
+    newh1.appendChild(newText)  // Adding that newText node in newely created element
+
+    document.body.appendChild(newh1)    // At last, adding newely created element in body
     console.log(newh1);
 
 </script>
