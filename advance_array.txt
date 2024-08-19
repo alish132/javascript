@@ -1,0 +1,5 @@
+On the basic of elements inside array javascript optimize it. Like if there is number then there will be another optimization, if there is string or float then there is another optimization and so on.
+SMI(small interger) is most efficent type of array and it includes only numbers not float also.
+Once array decrease to lower type than it is impossible to upgrade it.
+Holes are very expensive in JS. It is recommend to always avoid holes in an array because it reduces the optimization of the array.
+It is highy recommend to use rebuild methods like for-loop , for-of loop , for-Each loop and others because these are highly optimized and well defined.
